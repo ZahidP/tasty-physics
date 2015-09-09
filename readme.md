@@ -1,5 +1,6 @@
 ## Flavours of Physics - Kaggle Challenge
 https://www.kaggle.com/c/flavours-of-physics
+https://github.com/yandexdataschool/flavours-of-physics-start/
 
 
 ### Competition Background
@@ -12,7 +13,7 @@ There are a couple of distinctions that have to be made because these τ → 3μ
 Because of this (as stated by the hosts of the competition) we must do two things:
 
 **Check Agreement**
-   - Classifiers should agree on real and simulated data. (This is because some data cannot be perfectly simulated and a high performance classifier can be developed by picking those features)
+   - Classifiers should agree on real (background) and simulated (signal) data. (This is because some data cannot be perfectly simulated and a high performance classifier can be developed by picking those features)
    - The requirement is that the classifier does not show a significant discrepancy when applied to simulated vs. real data. The **Kolmogorov-Smirnov test** is used to evaluate the differences between the classifier distribution.
 
 
@@ -20,3 +21,6 @@ Because of this (as stated by the hosts of the competition) we must do two thing
    - Model should be uncorrelated to the τ mass.
    - _"Each particle has its own mass. In an ideal world, one would just the mass of a particle to tell which particle it is. However, in reality, mass is an estimation, and it isn't a feature that scientists trust when building a model. Correlations with mass can cause an artificial signal-like mass peak or lead to incorrect background estimations."_
    - Our submission needs a **Cramer-von Mises** test value less than 0.002 to pass.
+
+
+### Feature Selection
